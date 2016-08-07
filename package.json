@@ -12,6 +12,7 @@
     "typings": "typings",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node ./server.js",
+    "nodemon": "nodemon ./server.js && concurrently \"npm run tsc\" \"npm run tsc:w\"",
     "dev": "webpack-dev-server --content-base public --host 192.168.1.108 --inline --hot",
     "deploy": "NODE_ENV=production webpack"
   },
@@ -37,6 +38,7 @@
     "@angular/router-deprecated": "2.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.4",
     "angular2-in-memory-web-api": "0.0.14",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.1",
     "bootstrap": "^3.3.6",
     "core-js": "^2.4.0",
@@ -58,7 +60,7 @@
     "zone.js": "^0.6.12"
   },
   "engines": {
-    "node": "6.2.0"
+    "node": "6.3.1"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
