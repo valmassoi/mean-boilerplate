@@ -17,5 +17,5 @@ npm run nodemon
 ```
 
 ## TODO
--[ ] Webpack
--[ ] Clean up `package.json` scripts
+- [ ] Webpack  
+- [ ] Clean up `package.json` scripts  
