@@ -1,6 +1,9 @@
 # mean-boilerplate
 A `MEAN` full stack `JavaScript` + `TypeScript` app boilerplate - `MongoDB` + `Express.js` + `Angular2` + `Node.js`
 
+## Live Demo
+Hosted at https://mean-boiler.herokuapp.com/
+
 ## Getting Started
 ```bash
 git clone https://github.com/valmassoi/mean-boilerplate
