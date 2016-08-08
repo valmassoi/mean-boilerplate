@@ -7,15 +7,14 @@
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "preinstall": "npm i typings -g",
-    "postinstall": "typings install && npm run tsc",
+    "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node ./server.js",
     "nodemon": "nodemon ./server.js && concurrently \"npm run tsc\" \"npm run tsc:w\"",
-    "dev": "webpack-dev-server --content-base public --host 192.168.1.108 --inline --hot",
-    "deploy": "NODE_ENV=production webpack"
+    "build": "node bundler.js --prod"
   },
   "repository": {
     "type": "git",
