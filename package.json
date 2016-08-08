@@ -7,7 +7,7 @@
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "preinstall": "npm i typings -g",
-    "postinstall": "typings install && tsc",
+    "postinstall": "typings install && npm run tsc",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
