@@ -3,12 +3,16 @@ import './rxjs-extensions';
 
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
+import { NavBarComponent } from './layout/navbar.component';
+
 @Component({
     selector: 'my-app',
     template: `
-    <h1>My Mern App [CHANGEME]</h1>
+    <nav-bar></nav-bar>
     <router-outlet></router-outlet>
     `,
-    directives: [ROUTER_DIRECTIVES]
+    directives: [ROUTER_DIRECTIVES, NavBarComponent]
 })
-export class AppComponent { }
+export class AppComponent {
+
+}
