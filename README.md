@@ -3,6 +3,7 @@ A `MEAN` full stack `JavaScript` + `TypeScript` app boilerplate - `MongoDB` + `E
 
 ## Getting Started
 `npm i`  
+`mkdir data`  
 `npm mongod --port 27018 --dbpath=./data --smallfiles`  
 `npm run nodemon`  
 
